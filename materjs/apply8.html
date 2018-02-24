@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>点击这个按钮，来调用带参数的函数。</p>
+
+<button onclick="myFunction('Bill Gates','CEO')">点击这里</button>
+<button onclick="myFunction('Harry Potter','Wizard')">点击这里</button>
+<button onclick="myFunction('Bob','Builder')">点击这里</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction(name,job)
+{
+alert("Welcome " + name + ", the " + job);
+}
+
+function myFunction2(a,b)
+{
+    carname="Volvo";//如果您把值赋给尚未声明的变量，该变量将被自动作为全局变量声明,即使它在函数内执行
+    return a*b;
+}
+document.getElementById("demo").innerHTML=myFunction2(4,3);
+document.write(carname + "<br>");
+</script>
+
+</body>
+</html>

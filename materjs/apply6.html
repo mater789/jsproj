@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var carname1="Bill Gates";
+var carname2='Bill Gates';
+var answer1="Nice to meet you!";
+var answer2="He is called 'Bill'";
+var answer3='He is called "Bill"';
+
+document.write(carname1 + "<br>")
+document.write(carname2 + "<br>")
+document.write(answer1 + "<br>")
+document.write(answer2 + "<br>")
+document.write(answer3 + "<br>")
+
+var x1=36.00;
+var x2=36;
+var y=123e5;
+var z=123e-5;
+
+document.write(x1 + "<br />")
+document.write(x2 + "<br />")
+document.write(y + "<br />")
+document.write(z + "<br />")
+
+var x=true
+var y=false
+document.write(x + "<br />")
+
+var cars=new Array();
+cars[0]="Audi";
+cars[1]="BMW";
+cars[2]="Volvo";
+for (var i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+
+var cars=new Array("Audi","BMW","Volvo");
+for (var i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+
+var cars=["Audi","BMW","Volvo"];
+for (var i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+
+var person={
+firstname : "Bill",
+lastname  : "Gates",
+id        :  5566
+};
+document.write(person.lastname + "<br />");
+document.write(person["lastname"] + "<br />");
+
+cars=null;
+person=null;
+document.write(cars + "<br />");
+
+var carname=new String;
+var x=      new Number;
+var y=      new Boolean;
+var cars=   new Array;
+var person= new Object;
+document.write(x + "<br />")
+
+</script>
+
+</body>
+</html>

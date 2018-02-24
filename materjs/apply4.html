@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function myFunction()
+{
+    var y=5;
+    var x=y+2;
+    var demoP=document.getElementById("demo")
+    demoP.innerHTML="x=" + x;
+}
+
+var pi=3.14;
+var name="Bill Gates";
+var answer='Yes I am!';
+
+document.write(pi + "<br>");
+document.write(name + "<br>");
+document.write(answer + "<br>");
+
+var name="Gates", age=56, job="CEO";
+var name="Gates",
+    age=56,
+    job="CEO";
+document.write(job + "<br>");
+
+var name;//如果重新声明 JavaScript 变量，该变量的值不会丢失：
+document.write(name + "<br>");
+
+</script>
+
+<p>假设 y=5，计算 x=y+2，并显示结果。</p>
+<p id="demo"></p>
+<button onclick="myFunction()">点击这里</button>
+
+</body>
+</html>
