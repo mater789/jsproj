@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+cars=["BMW","Volvo","Saab","Ford"];
+var i=0;
+for (;cars[i];)
+{
+document.write(cars[i] + "<br>");
+i++;
+}
+
+cars=["BMW","Volvo","Saab","Ford"];
+var i=0;
+while (cars[i])
+{
+document.write(cars[i] + "<br>");
+i++;
+}
+
+function myFunction1()
+{
+var x="",i=0;
+for (i=0;i<10;i++)
+  {
+  if (i==3)
+    {
+    break;
+    }
+  x=x + "The number is " + i + "<br>";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+
+function myFunction2()
+{
+var x="",i=0;
+for (i=0;i<10;i++)
+  {
+  if (i==3)
+    {
+    continue;
+    }
+  x=x + "The number is " + i + "<br>";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+
+function myFunction3()
+{
+    var x="";
+    cars=["BMW","Volvo","Saab","Ford"];
+    list://break可以跳出某个语句块
+    {
+        x = x + cars[0] + "<br>";
+        x = x + cars[1] + "<br>";
+        x = x + cars[2] + "<br>";
+        break list;//break可以跳出某个语句块
+        x = x + cars[3] + "<br>";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+
+</script>
+
+<p>点击按钮，测试带有 break 语句的循环。</p>
+<button onclick="myFunction1()">点击这里</button>
+<button onclick="myFunction2()">点击这里</button>
+<button onclick="myFunction3()">点击这里</button>
+<p id="demo"></p>
+
+</body>
+</html>

@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome",
-            "file": "${workspaceRoot}/apply11.html",
+            "file": "${workspaceRoot}/hdom5.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
