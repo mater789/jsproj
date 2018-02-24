@@ -8,11 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome",
-<<<<<<< HEAD
-            "file": "${workspaceRoot}/test1.html",
-=======
             "file": "${workspaceRoot}/hdom5.html",
->>>>>>> 30b5b5e3d1edd6a06fd659e87ac0ce215ea45efa
             "webRoot": "${workspaceFolder}"
         }
     ]
