@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+cars=["BMW","Volvo","Saab","Ford"];
+for (var i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+for (var i=0,len=cars.length; i<len; i++)
+{
+document.write(cars[i] + "<br>");
+}
+var i=2,len=cars.length;
+for (; i<len; i++)
+{
+document.write(cars[i] + "<br>");
+}
+var i=0,len=cars.length;
+for (; i<len; )
+{
+document.write(cars[i] + "<br>");
+i++;
+}
+
+function myFunction1()
+{
+var x="";
+for (var i=0;i<5;i++)
+  {
+  x=x + "The number is " + i + "<br>";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+
+function myFunction2()
+{
+var x;
+var txt="";
+var person={fname:"Bill",lname:"Gates",age:56}; 
+
+//语句循环遍历对象的属性
+for (x in person)
+{
+txt=txt + person[x];
+}
+
+document.getElementById("demo").innerHTML=txt;
+}
+
+function myFunction3()
+{
+var x="",i=0;
+while (i<5)
+  {
+  x=x + "The number is " + i + "<br>";
+  i++;
+  }
+document.getElementById("demo").innerHTML=x;
+}
+
+function myFunction4()
+{
+var x="",i=0;
+do
+  {
+  x=x + "The number is " + i + "<br>";
+  i++;
+  }
+while (i<5)  
+document.getElementById("demo").innerHTML=x;
+}
+
+
+</script>
+
+<p>点击下面的按钮，将代码块循环五次：</p>
+<button onclick="myFunction1()">点击这里</button>
+<button onclick="myFunction2()">点击这里</button>
+<button onclick="myFunction3()">点击这里</button>
+<button onclick="myFunction4()">点击这里</button>
+<p id="demo"></p>
+
+
+</body>
+</html>

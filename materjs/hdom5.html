@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function changetext(id)
+            {
+                id.innerHTML="谢谢!";
+            }
+
+            function displayDate()
+            {
+                document.getElementById("demo").innerHTML=Date();
+            }
+
+            
+        </script>
+    </head>
+<body>
+    
+
+<h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>
+<h1 onclick="changetext(this)">请点击该文本</h1>
+
+<p id="demo"></p>
+<button onclick="displayDate()">点击这里</button>
+
+<button id="myBtn">点击这里</button>
+<script>
+    document.getElementById("myBtn").onclick=function(){displayDate()};
+</script>
+
+</body>
+</html>
