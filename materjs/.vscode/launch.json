@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome",
-            "file": "${workspaceRoot}/hdom7.html",
+            "file": "${workspaceRoot}/jprototype/jprototype2.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var w=window.innerWidth//Internet Explorer、Chrome、Firefox、Opera 以及 Safari
+|| document.documentElement.clientWidth// Internet Explorer 8、7、6、5
+|| document.body.clientWidth;
+
+var h=window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+x=document.getElementById("demo");
+x.innerHTML="浏览器的内部窗口宽度：" + w + "，高度：" + h + "。<br>"
+
+
+document.write("可用宽度：" + screen.availWidth);//显示器的
+document.write("可用高度：" + screen.availHeight);//减去菜单栏的高度
+
+</script>
+
+</body>
+</html>

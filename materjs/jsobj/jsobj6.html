@@ -1,0 +1,65 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date()
+        var h=today.getHours()
+        var m=today.getMinutes()
+        var s=today.getSeconds()
+        // add a zero in front of numbers<10
+        m=checkTime(m)
+        s=checkTime(s)
+        document.getElementById('txt').innerHTML=h+":"+m+":"+s
+        t=setTimeout('startTime()',500)//方法用于在指定的毫秒数后调用函数或计算表达式。
+        }
+        
+        function checkTime(i)
+        {
+        if (i<10) 
+            {i="0" + i}
+            return i
+        }
+    </script>
+ </head>
+<body onload="startTime()">
+
+<script type="text/javascript">
+
+document.write(Date() + "<br>")
+
+var d=new Date();
+document.write("从 1970/01/01 至今已过去 " + d.getTime() + " 毫秒" + "<br>");
+
+d.setFullYear(1992,10,3)
+document.write(d + "<br>")
+
+document.write (d.toUTCString() + "<br>")
+
+var weekday=new Array(7)
+weekday[0]="星期日"
+weekday[1]="星期一"
+weekday[2]="星期二"
+weekday[3]="星期三"
+weekday[4]="星期四"
+weekday[5]="星期五"
+weekday[6]="星期六"
+document.write("今天是" + weekday[d.getDay()] + "<br>")
+
+var myDate=new Date()
+myDate.setDate(myDate.getDate()+5)
+var today = new Date();
+myDate.setFullYear(2008,8,9);
+if (myDate>today)
+{
+document.write("Today is before 9th August 2008");
+}
+else
+{
+document.write("Today is after 9th August 2008");
+}
+
+</script>
+<div id="txt"></div>
+</body>
+</html>

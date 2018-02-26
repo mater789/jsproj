@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<script type="text/javascript">
+var patt1=new RegExp("e");//检索e
+
+document.write(patt1.test("The best things in life are free"));
+document.write(patt1.exec("The best things in life are free") + "<br>"); 
+
+var patt1=new RegExp("e","g");//所有某个字符的所有存在，则可以使用 "g" 
+do
+{
+result=patt1.exec("The best things in life are free");
+document.write(result + "<br>");
+}
+while (result!=null)
+
+var patt1=new RegExp("e");
+document.write(patt1.test("The best things in life are free") + "<br>");
+patt1.compile("d");//变为查d
+document.write(patt1.test("The best things in life are free")  + "<br>");
+
+</script>
+
+</body>
+</html>
