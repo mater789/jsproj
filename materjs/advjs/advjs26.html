@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<script type="text/javascript">
+function ClassA() {
+}
+
+ClassA.prototype.color = "red";
+ClassA.prototype.sayColor = function () {
+    alert(this.color);
+};
+
+function ClassB() {
+}
+
+ClassB.prototype = new ClassA();
+
+ClassB.prototype.name = "";
+ClassB.prototype.sayName = function () {
+    alert(this.name);
+};
+
+var objA = new ClassA();
+var objB = new ClassB();
+objA.color = "blue";
+objB.color = "red";
+objB.name = "John";
+objA.sayColor();
+objB.sayColor();
+objB.sayName();
+
+var objB = new ClassB();
+alert(objB instanceof ClassA);	//输出 "true"
+alert(objB instanceof ClassB);	//输出 "true"
+
+</script>
+ 
+</body>
+</html>

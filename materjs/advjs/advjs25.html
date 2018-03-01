@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<script type="text/javascript">
+function ClassA(sColor) {
+    this.color = sColor;
+    this.sayColor = function () {
+        alert(this.color);
+    };
+}
+
+function ClassB(sColor, sName) {
+    //this.newMethod = ClassA;
+    //this.newMethod(color);
+    //delete this.newMethod;
+    //ClassA.apply(this, new Array(sColor));
+    ClassA.apply(this, arguments);
+
+    this.name = sName;
+    this.sayName = function () {
+        alert(this.name);
+    };
+}
+
+var objA = new ClassA("blue");
+var objB = new ClassB("red", "John");
+objA.sayColor();
+objB.sayColor();    
+objB.sayName();
+
+
+function sayColor(sPrefix,sSuffix) {
+    alert(sPrefix + this.color + sSuffix);
+};
+var obj = new Object();
+obj.color = "blue";
+sayColor.apply(obj, new Array("The color is ", "a very nice color indeed."));
+
+</script>
+ 
+</body>
+</html>
